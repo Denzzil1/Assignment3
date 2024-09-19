@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('conferencepic.jpg'); /* uses image included*/
+    color: #333;
+    background-size: cover; /*covers the entire page with the image*/
+}
+
+header.top {
+    text-align: center;
+    background-color: #6B7FD7;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+p {
+    color: white;
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    background-color: #ccb4f5;
+    border-radius: 1px;
+    align-items: flex-start;
+}
+
+.leftside {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rightside {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    flex: 1;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 600px;
+}
+
+.leftside h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+
+
+.rightside h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.rightside ul {
+    padding: 0;
+    list-style-type:none;/*removes bullet points*/
+}
+
+.rightside li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button.rgstr-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-style: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.rgstr-btn:hover{
+    background-color: lightblue; /*mouse hover over button makes it lightblue*/
+}
+/*responsive design for smaller screens*/
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    header.top h1 {
+        font-size: 28px;
+    }
+}
+
+.register-flex {
+    max-width: 600px;
+    margin: 10px auto; /*centers the register form*/
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #2F5BFF;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*healthy space between the labels and inputs*/
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+/*styling all the inputs*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.genders {
+    text-align: left;/*makes it easier to have genders listed out cleanly*/
+}
+
+.genders input {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+/*styling for submit button*/
+.sbmt-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sbmt-btn:hover {
+    background-color: lightblue;/*hover pointer makes it lightblue*/
+}
+
+.back-btn {
+    display: flex;/*flex display goes along with the rest of the webpage*/
+    margin-top: 20px;
+    margin: 50px auto; /*centers button*/
+    width: 300px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: lightblue;
+}
